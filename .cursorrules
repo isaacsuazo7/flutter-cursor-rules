@@ -1,0 +1,73 @@
+# Flutter Cursor Rules Configuration
+
+## Core Principles
+- Always use `const` constructors when possible for better performance
+- Prefer StatelessWidget/StatefulWidget over function widgets
+- Follow Dart naming conventions strictly
+- Optimize for performance and maintainability
+
+## Widget Rules
+- Use `const` for all immutable widgets
+- Always call `super.key` in widget constructors
+- Create separate widget classes instead of widget functions
+- Extract complex widgets into separate files
+
+## Code Style
+- Use `camelCase` for variables and functions
+- Use `PascalCase` for classes and enums
+- Use `snake_case` for file names
+- Group imports: dart core, flutter, packages, internal
+
+## Performance
+- Use `ListView.builder` for dynamic lists
+- Implement `const` constructors wherever possible
+- Avoid unnecessary rebuilds with proper widget extraction
+- Use `RepaintBoundary` for expensive widgets
+
+## State Management
+- Keep state local when possible
+- Use proper state management solutions for complex state
+- Never store BuildContext in instance variables
+- Handle async operations with proper error handling
+
+## Responsive Design
+- Use `MediaQuery` for screen dimensions
+- Implement `LayoutBuilder` for adaptive layouts
+- Use `Flexible` and `Expanded` appropriately
+- Design for multiple screen sizes
+
+## Error Handling
+- Always wrap async operations in try-catch
+- Show appropriate loading and error states
+- Handle null values safely
+- Provide meaningful error messages
+
+## Documentation
+- Document public APIs with `///` comments
+- Keep README files updated
+- Use meaningful variable and function names
+- Comment complex business logic
+
+## File Organization
+- One main widget per file for complex widgets
+- Group related simple widgets together
+- Use barrel exports for clean imports
+- Organize files in logical folder structure
+
+## Theme and Styling
+- Use `Theme.of(context)` for colors and text styles
+- Define consistent spacing and sizing
+- Avoid hardcoded colors and dimensions
+- Create reusable style constants
+
+## Testing
+- Write unit tests for business logic
+- Create widget tests for UI components
+- Test error scenarios and edge cases
+- Maintain good test coverage
+
+## Assets
+- Define asset paths as constants
+- Organize assets in logical folders
+- Optimize images for different screen densities
+- Use vector graphics when possible
